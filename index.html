@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <link
+      rel="stylesheet"
+      href="./style/highlightjs.css"
+    />
+    <script src="./modules/highlight.js"></script>
+  </head>
+  <body data-run="0" data-pause="0">
+    <nav>
+      <div id="logo">
+        <h1 id="blueLogo">Sorting Visualizer</h1>
+        <h1 id="pinkLogo">Sorting Visualizer</h1>
+      </div>
+      <div class="sliderText" id="sliderWrapperSize">
+        <p class="descriptionForSlider">Size</p>
+        <input
+          type="range"
+          min="4"
+          max="100"
+          value="99"
+          id="sliderSize"
+          class="slider"
+        />
+      </div>
+      <div class="sliderText" id="sliderWrapperSpeed">
+        <p class="descriptionForSlider">Speed</p>
+        <input
+          type="range"
+          min="4"
+          max="1000"
+          value="100"
+          id="sliderSpeed"
+          class="slider"
+        />
+      </div>
+
+      <button id="play" class="btn">Play</button>
+      <button id="pause" class="btn">Pause</button>
+      <button id="reset" class="btn">Generate new array</button>
+    
+        <select id="selectAlgo">
+          <option value="bblsort">Bubble Sort</option>
+          <option value="quicksort">Quick Sort</option>
+          <option value="radixsort">Radix Sort</option>
+          <option value="mergesort">Merge Sort</option>
+          <option value="heapsort">Heap Sort</option>
+          <option value="insertionsort">Insertion Sort</option>
+          <option value="shellsort">Shell Sort</option>
+          <option value="coustomsort" style="color: var(--blueLight)">
+            Coustom Sort
+          </option>
+        </select>
+      </div>
+      <div id="ranGenCheck">
+        <p id="randomGeneration">Random generation</p>
+        <input type="checkbox" id="random" style="display: none" />
+        <label for="random" class="toggle"><span></span></label>
+      </div>
+    </nav>
+    <div id="lineUnderNav"></div>
+    <div id="main"></div>
+    <div class="editor language-js" data-gramm="false"></div>
+    <pre><div class="codeSript"></div></pre>
+    <div id="coustomsortExplained"><h2>Here you can visualize your own sorting algorithm</h2>
+    <p>To render something on the screen use one of the functions</p>
+      <div>Use swap to swap the position of two elements on the screen</div>
+      <code>swap(index1, index2)</code>
+      <div>Use pos to render the hight/value of one element</div>
+      <code>pos(index, value)</code>
+      <div>Use color to color one element red</div>
+      <code>color(position)</code>
+      <div>Use removeColor to set the color of one element to it's default</div>
+      <code>removeColor(position)</code>
+   </div>
+    <footer>
+      <div class="footerLine">Made with <img src="./pictures/love.png" id="love"> by <a target="_blank" id="nameText" href="https://linkedin.com/in/maurice-k%C3%BChl-ba3b19217">Maurice Kühl <img id="linkedinImg" src="./pictures/LI-In-Bug.png"></a></div>
+      <div class="footerLine"><a target="_blank" href="https://github.com/mauricekuehl">View project on Github <img id="githubImg" src="./pictures/GitHub-Mark-Light-64px.png"></a></div>
+    </footer>
+  </body>
+  <script type="module" src="index.js"></script>
+
+
+  
+</html>
