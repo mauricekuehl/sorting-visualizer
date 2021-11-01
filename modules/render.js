@@ -7,7 +7,6 @@ export function all(arr) {
     )
     .join("");
   var t1 = performance.now();
-  console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.");
 }
 export function swap(pos1, pos2) {
   let pos1height = document.querySelector(`[data-pos='${pos1}']`).style.height;

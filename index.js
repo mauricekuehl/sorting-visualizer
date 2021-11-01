@@ -47,8 +47,6 @@ async function runAnimations(arr, speedX) {
           value = document.querySelector("#sliderSpeed").value;
           delay = Math.pow(value, 2) * 0.001;
         }
-
-        console.log(delay);
         if (delay >= 4) {
           await sleep(delay);
         } else if (count % Math.round(4 / delay) === 0) {
@@ -202,7 +200,7 @@ function selectAlgoChange() {
 }
 window.addEventListener("resize", resize);
 function resize() {
-  sliderSize = document.querySelector("#sliderSize");
+  let sliderSize = document.querySelector("#sliderSize");
   if (document.body.clientWidth / 2 - 1 <= sliderSize.value) {
     sliderSize.value = sliderSize.value * 0.7;
     clear();
