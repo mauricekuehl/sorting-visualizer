@@ -43,6 +43,7 @@ nav > .btn,
   border: var(--background);
   color: var(--white);
   font-size: 1.125rem;
+  cursor: pointer;
 }
 #reset {
   width: 9.25rem;
