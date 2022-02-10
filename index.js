@@ -13,7 +13,7 @@ const jar = new CodeJar(document.querySelector(".editor"), (editor) => {
   editor.textContent = editor.textContent;
   hljs.highlightBlock(editor);
 });
-jar.updateCode(codeScript.coustomsort);
+jar.updateCode(codeScript.customsort);
 const defaultColor = "rgba(255, 255, 255, 0.75)";
 const highlightColor = "#ff0000";
 let array = [];
@@ -128,8 +128,8 @@ function play() {
       case "insertionsort":
         runAnimations(insertionSort(array));
         break;
-      case "coustomsort":
-        console.log("run coustomsort");
+      case "customsort":
+        console.log("run customsort");
         let animation = [];
         try {
           eval(
@@ -146,7 +146,7 @@ function play() {
               animation.push(['r', pos]);
             }
             ${jar.toString()}
-            coustomSort(array);`
+            customSort(array);`
           );
           runAnimations(animation, 1);
         } catch (error) {
@@ -184,13 +184,13 @@ document
 function selectAlgoChange() {
   const editor = document.querySelector(".editor");
   const codeScriptTag = document.querySelector(".codeSript");
-  const coustomsortExplained = document.querySelector("#coustomsortExplained");
-  if (document.querySelector("#selectAlgo").value === "coustomsort") {
+  const customsortExplained = document.querySelector("#customsortExplained");
+  if (document.querySelector("#selectAlgo").value === "customsort") {
     codeScriptTag.style.display = "none";
     editor.style.display = "block";
-    coustomsortExplained.style.display = "block";
+    customsortExplained.style.display = "block";
   } else {
-    coustomsortExplained.style.display = "none";
+    customsortExplained.style.display = "none";
     editor.style.display = "none";
     codeScriptTag.style.display = "block";
     codeScriptTag.innerHTML =

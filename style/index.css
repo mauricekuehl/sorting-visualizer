@@ -122,13 +122,13 @@ nav > .btn,
   width: 10px;
   margin-left: 1px;
 }
-#coustomsortExplained {
+#customsortExplained {
   width: 76%;
   margin: 2rem auto 4rem 12vw;
   color: var(--blue);
   font-size: 1.5rem;
 }
-#coustomsortExplained > code {
+#customsortExplained > code {
   background-color: #01ffff11;
   padding: 0.625rem 1.125rem;
   width: 100%;
@@ -136,16 +136,16 @@ nav > .btn,
   border-radius: 10px;
   color: white;
 }
-#coustomsortExplained > div {
+#customsortExplained > div {
   padding: 1rem 0 0.5rem 0;
   color: rgba(245, 245, 245, 0.85);
 }
-#coustomsortExplained > p {
+#customsortExplained > p {
   padding-bottom: 0.75rem;
   color: var(--white);
   font-size: 1.75rem;
 }
-#coustomsortExplained > h2 {
+#customsortExplained > h2 {
   padding-bottom: 0.5rem;
 }
 .codeSript,
