@@ -4,20 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="follow"/>
-    <meta name="description" content="Algorithms Visualizer is an easy to use and fast way to visualize classic and your own custom algorithms."/>
-    <meta name="keywords" content="sorting, visualizer, maurice, kuehl, kühl, algorithm, algorithms, custom, simple, fast, project, projects"/>
-    <meta name="author" content="Maurice Kuehl" />
-    <title>Sorting Visualizer </title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/pictures/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/pictures/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/pictures/favicon-16x16.png">
-    <link rel="manifest" href="/pictures/site.webmanifest">
-    <link rel="stylesheet" href="./style/index.css" />
-    <link
-      rel="stylesheet"
-      href="./style/highlightjs.css"
+    <meta name="robots" content="follow" />
+    <meta
+      name="description"
+      content="Algorithms Visualizer is an easy to use and fast way to visualize classic and your own custom algorithms."
     />
+    <meta
+      name="keywords"
+      content="sorting, visualizer, maurice, kuehl, kühl, algorithm, algorithms, custom, simple, fast, project, projects"
+    />
+    <meta name="author" content="Maurice Kuehl" />
+    <title>Sorting Visualizer</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/pictures/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/pictures/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/pictures/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/pictures/site.webmanifest" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/highlightjs.css" />
     <script src="./modules/highlight.js"></script>
   </head>
   <body data-run="0" data-pause="0">
@@ -27,43 +44,45 @@
         <h1 id="pinkLogo">Sorting Visualizer</h1>
       </div>
       <div class="sliderText" id="sliderWrapperSize">
-        <p class="descriptionForSlider">Size</p><label >
-        <input
-          type="range"
-          min="4"
-          max="4000"
-          value="4"
-          id="sliderSize"
-          class="slider"
+        <p class="descriptionForSlider">Size</p>
+        <label>
+          <input
+            type="range"
+            min="4"
+            max="4000"
+            value="4"
+            id="sliderSize"
+            class="slider"
         /></label>
       </div>
       <div class="sliderText" id="sliderWrapperSpeed">
-        <p class="descriptionForSlider">Speed</p><label >
-        <input
-          type="range"
-          min="4"
-          max="1000"
-          value="100"
-          id="sliderSpeed"
-          class="slider"
+        <p class="descriptionForSlider">Speed</p>
+        <label>
+          <input
+            type="range"
+            min="4"
+            max="1000"
+            value="100"
+            id="sliderSpeed"
+            class="slider"
         /></label>
       </div>
       <button id="play" class="btn">Play</button>
       <button id="pause" class="btn">Pause</button>
       <button id="reset" class="btn">Generate new array</button>
-        <select id="selectAlgo">
-          <option value="bblsort">Bubble Sort</option>
-          <option value="quicksort">Quick Sort</option>
-          <option value="radixsort">Radix Sort</option>
-          <option value="mergesort">Merge Sort</option>
-          <option value="heapsort">Heap Sort</option>
-          <option value="insertionsort">Insertion Sort</option>
-          <option value="shellsort">Shell Sort</option>
-          <option value="customsort" style="color: var(--blueLight)">
-            Custom Sort
-          </option>
-        </select>
-      </div>
+      <select id="selectAlgo">
+        <option value="bblsort">Bubble Sort</option>
+        <option value="quicksort">Quick Sort</option>
+        <option value="radixsort">Radix Sort</option>
+        <option value="mergesort">Merge Sort</option>
+        <option value="heapsort">Heap Sort</option>
+        <option value="insertionsort">Insertion Sort</option>
+        <option value="shellsort">Shell Sort</option>
+        <option value="customsort" style="color: var(--blueLight)">
+          Custom Sort
+        </option>
+      </select>
+
       <div id="ranGenCheck">
         <p id="randomGeneration">Random generation</p>
         <input type="checkbox" id="random" style="display: none" />
@@ -74,8 +93,9 @@
     <div id="main"></div>
     <div class="editor language-js" data-gramm="false"></div>
     <pre><div class="codeSript"></div></pre>
-    <div id="customsortExplained"><h2>Here you can visualize your own sorting algorithm</h2>
-    <p>To render something on the screen use one of the functions</p>
+    <div id="customsortExplained">
+      <h2>Here you can visualize your own sorting algorithm</h2>
+      <p>To render something on the screen use one of the functions</p>
       <div>Use swap to swap the position of two elements on the screen</div>
       <code>swap(index1, index2)</code>
       <div>Use pos to render the hight/value of one element</div>
@@ -84,10 +104,29 @@
       <code>color(position)</code>
       <div>Use removeColor to set the color of one element to it's default</div>
       <code>removeColor(position)</code>
-   </div>
+    </div>
     <footer>
-      <div class="footerLine">Made with <img src="./pictures/love.png" id="love" alt="love"> by <a target="_blank" id="nameText" href="https://linkedin.com/in/maurice-k%C3%BChl-ba3b19217">Maurice Kühl <img id="linkedinImg" src="./pictures/LI-In-Bug.png" alt="linkedin"></a></div>
-      <div class="footerLine"><a target="_blank" href="https://github.com/mauricekuehl/sorting-visualizer">View project on Github <img id="githubImg" src="./pictures/GitHub-Mark-Light-64px.png" alt="github"></a></div>
+      <div class="footerLine">
+        Made with <img src="./pictures/love.png" id="love" alt="love" /> by
+        <a
+          target="_blank"
+          id="nameText"
+          href="https://linkedin.com/in/maurice-k%C3%BChl-ba3b19217"
+          >Maurice Kühl
+          <img id="linkedinImg" src="./pictures/LI-In-Bug.png" alt="linkedin"
+        /></a>
+      </div>
+      <div class="footerLine">
+        <a
+          target="_blank"
+          href="https://github.com/mauricekuehl/sorting-visualizer"
+          >View project on Github
+          <img
+            id="githubImg"
+            src="./pictures/GitHub-Mark-Light-64px.png"
+            alt="github"
+        /></a>
+      </div>
     </footer>
   </body>
   <script type="module" src="index.js"></script>
