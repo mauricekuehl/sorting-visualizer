@@ -188,12 +188,13 @@ footer {
   color: #01ffff;
 }
 #linkedinImg {
-  height: auto;
   width: 1.375rem;
+  aspect-ratio: 1.125/1;
 }
 #love,
 #githubImg {
   width: 1.125rem;
+  aspect-ratio: 1/1;
 }
 a {
   text-decoration: none;
